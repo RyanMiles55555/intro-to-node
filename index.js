@@ -3,7 +3,7 @@ import { constants } from "fs";
 import { copyFile } from "fs/promises";
 
 try {
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 2; i++) {
     await copyFile("text.txt", `text${[i]}.txt`);
     console.log("source was copied successfully");
   }
